@@ -31,7 +31,6 @@ selectEncodeOrDecode.forEach((option) => {
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-
     let inputTextValue = inputText.value;
     let selectedOption = Array.from(selectEncodeOrDecode).find((option) => option.checked);
     let shiftValue = parseInt(shiftKey.value);
