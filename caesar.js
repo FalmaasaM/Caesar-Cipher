@@ -14,12 +14,16 @@ selectEncodeOrDecode.forEach((option) => {
     option.addEventListener("click", () => {
         if (option.value === "encode") {
             hInput.textContent = "Plaintext";
-            hOutput.textContent = "Ciphertext";
+            hOutput.textContent = "Ciphertext"; 
+            inputText.placeholder = "Enter plaintext";
+            outputText.placeholder = "Output";
             inputText.value = "";
             outputText.textContent = "";
         } else if (option.value === "decode") {
             hInput.textContent = "Ciphertext";
             hOutput.textContent = "Plaintext";
+            inputText.placeholder = "Enter ciphertext";
+            outputText.placeholder = "Output";
             inputText.value = "";
             outputText.textContent = "";
         }
